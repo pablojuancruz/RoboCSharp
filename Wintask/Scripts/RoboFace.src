@@ -1,0 +1,25 @@
+Pause 500 Ticks
+StartBrowser("CH", "http://facebook.com", 3)
+
+UseWindow("CHROME.EXE|Chrome_RenderWidgetHostHWND|Chrome Legacy Window",1, NoActivate)
+	ClickMouse(Left,Down,846,35)
+
+UseWindow("CHROME.EXE|Chrome_WidgetWin_1|Bem-vindo ao Facebook - acesse, cadastre-se ou saiba mais. - Google Chrome",1, NoActivate)
+	MoveMouse(854,128)
+	ClickMouse(Left,Up,854,128)
+	Pause 104 Ticks
+	SendKeys(Command$(1)+"<Tab>"+Command$(2)+"<Enter>")
+	Pause 700 Ticks
+
+UseWindow("CHROME.EXE|Chrome_RenderWidgetHostHWND|Chrome Legacy Window",1, NoActivate)
+	ClickMouse(Left,Down,463,110)
+	ClickMouse(Left,Up,463,110)
+
+UseWindow("CHROME.EXE|Chrome_RenderWidgetHostHWND|Chrome Legacy Window",1, NoActivate)
+	Pause 239 Ticks
+	SendKeys(Command$(3))
+	Pause 700 Ticks
+
+UseWindow("CHROME.EXE|Chrome_RenderWidgetHostHWND|Chrome Legacy Window",1, NoActivate)
+	ClickMouse(Left,Down,725,177)
+	ClickMouse(Left,Up,725,177)
